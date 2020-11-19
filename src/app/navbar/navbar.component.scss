@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+
+// @import url("https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.subheading {
+    text-align: center;
+    font-size: 30px;
+    // font-family: 'Sora', sans-serif;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+}
+
+.normal-heading {
+    font-weight: 900;
+    //   letter-spacing: 1px;
+    text-align: center;
+    font-size: 3vw;
+    // line-height: 4.5vw;
+    font-family: "PT Sans Narrow", sans-serif;
+    // font-family: "Raleway", sans-serif;
+    color: #242c42;
+    margin-bottom: 4vw;
+    padding-top: 4vw;
+}
+
+@media only screen and (max-width: 900px) {
+    .normal-heading {
+        font-size: 4vw;
+        margin-bottom: 4.5vw;
+        padding-top: 4.5vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .normal-heading {
+        font-size: 6.2vw;
+        margin-bottom: 8vw;
+        padding-top: 8vw;
+    }
+}
+
+.navbar_container {
+    background-color: #fff;
+    overflow: hidden;
+    // border: 1px solid #1B365D;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 2px 1px rgba(0, 0, 0, 0.04), 0px 1px 5px rgba(0, 0, 0, 0.08);
+    // position: fixed;
+    margin-bottom: 2px;
+    z-index: 6;
+}
+
+.navbar_button {
+    color: #476176;
+}
+
+.logo_text {
+    font-weight: bolder;
+    font-size: 35px;
+    color: #2597d5;
+    font-family: "Sora", sans-serif;
+}
+
+.main_button {
+    border: 1px solid #2597d5;
+    border-radius: 6px;
+    color: #2597d5;
+}
+
+.menu-spacer {
+    flex: 1 1 auto;
+}
+
+.toolbar {
+    height: 70px;
+    background-color: #fff;
+}
+
+// .brand-image {
+//   height: auto;
+// }
+.mat-button {
+    font-size: 15px;
+    font-weight: 370;
+    // font: ProximaSemiBold;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.fab {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 5;
+}
+
+.fab-button {
+    background-color: #00c600;
+    &::ng-deep .mat-button-wrapper {
+        display: contents;
+    }
+}
+
+.example-list {
+    width: 100px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.example-list>li {
+    list-style-type: none;
+    border-bottom: solid 1px #8b8b8b;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.example-list>li:last-child {
+    border-bottom: none;
+}

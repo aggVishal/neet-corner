@@ -1,0 +1,70 @@
+.banner-container {
+    display: flex;
+    margin: 0px 0px 0px 120px;
+    align-items: center;
+}
+
+.ba-content-head {
+    line-height: 34px;
+    padding-left: 1rem;
+    text-align: left;
+    color: #21243d;
+    font-size: 40px;
+    font-family: "Sora", sans-serif;
+}
+
+.ba-content-info {
+    text-align: left;
+    line-height: 26px;
+    color: #476176;
+    font-size: 19px;
+    padding: 1rem;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.ba-image {
+    line-height: 0;
+}
+
+.join-now-btn {
+    padding-left: 1rem;
+}
+
+@media only screen and (max-width: 950px) {
+    .banner-container {
+        margin-left: 60px;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .banner-container {
+        margin: 0px 0px 0px 0px;
+        flex-direction: column-reverse;
+    }
+    img {
+        height: 100%;
+    }
+    .ba-content {
+        margin: 50px 50px 20px 50px;
+    }
+    .ba-content-head {
+        text-align: center;
+    }
+    .ba-content-info {
+        text-align: justify;
+    }
+    .join-now-btn {
+        text-align: center;
+    }
+    .ba-image {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        align-self: flex-end;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .ba-content {
+        margin: 50px 12px 50px 12px;
+    }
+}
