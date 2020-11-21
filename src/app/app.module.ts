@@ -10,6 +10,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 // import { NgxPageScrollModule } from 'ngx-page-scroll'
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +21,10 @@ import { FooterComponent } from './footer/footer.component';
 import { BannerComponent } from './banner/banner.component';
 import { StatsComponent } from './stats/stats.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { TestSeriesComponent } from './test-series/test-series.component';
+import { HomeComponent } from './home/home.component';
+import { AuthComponent } from './auth/auth.component';
+import { LoginComponent } from './auth/login/login.component';
 
 
 @NgModule({
@@ -29,7 +35,11 @@ import { ScheduleComponent } from './schedule/schedule.component';
     FooterComponent,
     BannerComponent,
     StatsComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    TestSeriesComponent,
+    HomeComponent,
+    AuthComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +51,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
     FlexLayoutModule,
     // NgxPageScrollModule,
     MatTabsModule,
+    ReactiveFormsModule,
+    FormsModule,
     MatCardModule
   ],
   providers: [],

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "neet-corner"
+  },
+  "targets": {
+    "neet-corner": {
+      "hosting": {
+        "neet-corner": [
+          "neet-corner"
+        ]
+      }
+    }
+  }
+}

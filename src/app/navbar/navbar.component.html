@@ -10,11 +10,12 @@
         <div>
             <!-- The following menu items will be hidden on both SM and XS screen sizes -->
             <a class="navbar_button" mat-button>About Us</a>
-            <a class="navbar_button" mat-button>Mentors</a>
-            <a class="navbar_button" mat-button>Live Classes</a>
+            <a class="navbar_button" [routerLink]="['/test-series']" mat-button>Test Series</a>
+            <a class="navbar_button" mat-button>Youtube Classes</a>
             <a class="navbar_button" mat-button>Contact Us</a>
             <!-- <button mat-button (click)="isOpen = !isOpen" type="button" cdkOverlayOrigin #trigger="cdkOverlayOrigin">{{ currentUser?.first_name }}</button> -->
         </div>
         <!-- <button class="navbar_button main_button" mat-button>Login</button> -->
     </mat-toolbar>
 </mat-toolbar>
+<router-outlet></router-outlet>

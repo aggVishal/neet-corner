@@ -1,0 +1,24 @@
+<div class="login-container">
+    <br>
+    <br>
+    <mat-card class="example-card">
+        <br>
+        <mat-card-content>
+            <form>
+                <label for="username" class="login-label">Username</label><br>
+                <input matInput type="text" name="username" class="login-input" [(ngModel)]="username"><br><br>
+
+                <label for="password" class="login-label">Password</label><br>
+                <input matInput type="password" name="password" class="login-input" [(ngModel)]="password"><br>
+                <div class="wrong-message">{{result}}</div>
+            </form>
+        </mat-card-content>
+        <br>
+
+        <button mat-raised-button class="login-button" (click)="loginUser()">Login</button>
+
+        <!-- <input type="submit" value="login" (click)="loginUser()"> -->
+
+    </mat-card>
+
+</div>
