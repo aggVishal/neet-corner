@@ -16,6 +16,7 @@
 
 .about-container {
     display: flex;
+    flex-direction: row;
 }
 
 .name {
@@ -45,7 +46,6 @@
 
 .img {
     width: 100%;
-    border-radius: 5px;
     margin-top: -45px;
 }
 
@@ -56,8 +56,8 @@
 
 #about-section {
     background-color: #f7f7f7;
-    padding-top: 3%;
-    padding-bottom: 1%;
+    padding-top: 30px;
+    padding-bottom: 20px;
     // color: white;
 }
 
@@ -73,5 +73,29 @@
 @media only screen and (max-width: 800px) and (min-width: 375px) {
     #aboutPara {
         margin: -5px 40px 25px 40px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .about-container {
+        flex-direction: column-reverse;
+    }
+    .left {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .right {
+        width: 100%;
+    }
+    .img {
+        margin-top: 10px;
+    }
+    .about-image {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    #aboutPara {
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }

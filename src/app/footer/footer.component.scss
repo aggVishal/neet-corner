@@ -8,7 +8,7 @@
 
 ul {
     list-style: none;
-    padding-left: 0;
+    padding-left: 0px;
 }
 
 footer {
@@ -161,20 +161,23 @@ input[type="submit"] {
     color: #476176;
 }
 
-@media only screen and (min-width: 29.8125rem
-/* 477px */
-
-) {
+@media only screen and (min-width: 29.8125rem) {
     .ft-main {
         justify-content: space-evenly;
     }
 }
 
-@media only screen and (min-width: 77.5rem
-/* 1240px */
-
-) {
+@media only screen and (min-width: 77.5rem) {
     .ft-main {
         justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    footer {
+        background-color: #fff;
+    }
+    .ft-main {
+        padding-left: 15px;
     }
 }

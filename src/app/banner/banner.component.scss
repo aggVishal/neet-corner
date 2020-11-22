@@ -1,12 +1,13 @@
 .banner-container {
     display: flex;
     // margin: 0px 0px 0px 120px;
-    align-items: center;
+    // align-items: center;
     background-image: url('/assets/images/banner-img.jpg');
     background-repeat: no-repeat;
     // background-attachment: fixed;
     background-size: 100%;
-    height: 580px;
+    height: 44.4vw;
+    // border: 1px solid black;
 }
 
 .container {
@@ -14,6 +15,13 @@
     margin-left: 11%;
     margin-right: 45%;
     // padding-top: 13%;
+    // border: 1px solid rgb(121, 92, 92);
+    height: 100%;
+    padding-top: 9%;
+}
+
+.mat-flat-button {
+    font-family: "Sora", sans-serif;
 }
 
 .ba-content-head {
@@ -41,7 +49,10 @@
 
 @media only screen and (max-width: 950px) {
     .banner-container {
-        margin-left: 60px;
+        // margin-left: 60px;
+    }
+    .container {
+        padding-top: 5%;
     }
 }
 
@@ -50,21 +61,22 @@
         margin: 0px 0px 0px 0px;
         flex-direction: column-reverse;
     }
-    img {
-        height: 100%;
+    .ba-content-head {
+        font-size: 4.5vw;
+        line-height: 5.9vw;
     }
     .ba-content {
-        margin: 50px 50px 20px 50px;
+        // margin: 50px 50px 20px 50px;
     }
-    .ba-content-head {
-        text-align: center;
-    }
-    .ba-content-info {
-        text-align: justify;
-    }
-    .join-now-btn {
-        text-align: center;
-    }
+    // .ba-content-head {
+    //     text-align: center;
+    // }
+    // .ba-content-info {
+    //     text-align: justify;
+    // }
+    // .join-now-btn {
+    //     text-align: center;
+    // }
     .ba-image {
         overflow-x: hidden;
         overflow-y: hidden;
@@ -72,8 +84,21 @@
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 450px) {
     .ba-content {
-        margin: 50px 12px 50px 12px;
+        // margin: 50px 12px 50px 12px;
+    }
+    .ba-content-head {
+        font-size: 7.5vw;
+        line-height: 9.2vw;
+    }
+    .banner-container {
+        background-image: url('/assets/images/banner-img5.jpg');
+        height: 98.4vw;
+    }
+    .container {
+        margin-left: 7.2%;
+        margin-right: 22%;
+        padding-top: 18%;
     }
 }
