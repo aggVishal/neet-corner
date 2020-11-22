@@ -1,0 +1,104 @@
+.stats-container {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.stats-contents {
+    display: flex;
+    flex-direction: row;
+}
+
+// .stats-contents :hover {
+//     color: #ffffff;
+// }
+.stats-element {
+    text-align: center;
+    width: 34%;
+    height: 17vw;
+    // color: #476176;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.stat-element-container {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.stat-icon {
+    font-size: 3.5vw;
+}
+
+.stat-number {
+    margin: 2vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.stat-line {
+    margin: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: .3vw;
+    border-radius: 50px;
+    background-color: #cfd2d5;
+}
+
+.stat-name {
+    font-size: 1.4vw;
+    color: #7f8987;
+}
+
+.color1 {
+    color: #FF0000;
+}
+
+.color2 {
+    color: #38BB0C;
+}
+
+.color3 {
+    color: #358FF7;
+}
+
+.color4 {
+    color: #F79A26;
+}
+
+@media only screen and (max-width: 500px) {
+    .stats-contents {
+        flex-direction: column;
+    }
+    .stats-element {
+        width: 100%;
+        height: 80vw;
+    }
+    .stat-element-container {
+        margin-top: 12vw;
+        margin-bottom: 12vw;
+    }
+    .stat-icon {
+        font-size: 20vw;
+    }
+    .stat-number {
+        margin: 8vw;
+        font-size: 15vw;
+    }
+    .stat-line {
+        margin: 4vw;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        height: 1.2vw;
+    }
+    .stat-name {
+        font-size: 8vw;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 500px) {
+    .stats-element {
+        height: 23vw;
+    }
+}

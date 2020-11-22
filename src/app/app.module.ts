@@ -11,6 +11,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,6 +26,8 @@ import { TestSeriesComponent } from './test-series/test-series.component';
 import { HomeComponent } from './home/home.component';
 import { AuthComponent } from './auth/auth.component';
 import { LoginComponent } from './auth/login/login.component';
+import { CommunityComponent } from './community/community.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -39,7 +42,9 @@ import { LoginComponent } from './auth/login/login.component';
     TestSeriesComponent,
     HomeComponent,
     AuthComponent,
-    LoginComponent
+    LoginComponent,
+    CommunityComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +58,8 @@ import { LoginComponent } from './auth/login/login.component';
     MatTabsModule,
     ReactiveFormsModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
