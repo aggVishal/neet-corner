@@ -6,6 +6,7 @@
     padding-right: 18%;
     display: flex;
     color: #fff;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .left {
@@ -20,22 +21,20 @@
 .title {
     font-size: 30px;
     color: #F7A771;
-}
-
-.icons-title {
-    font-size: 20px;
+    font-weight: 600;
 }
 
 .content {
     color: #fff;
     font-size: 17px;
-    margin-top: 2%;
+    margin-top: 5%;
+    line-height: 25px;
     margin-bottom: 4%;
 }
 
-.img {
-    width: 100%;
-    border-radius: 5px;
+.icons-title {
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .icons {
@@ -44,7 +43,12 @@
     justify-content: space-between;
     width: 80%;
     // color: white;
-    margin-top: 2%;
+    margin-top: 4%;
+}
+
+.img {
+    width: 100%;
+    border-radius: 5px;
 }
 
 .single-icon {

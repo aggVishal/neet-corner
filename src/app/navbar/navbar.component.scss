@@ -1,57 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 // @import url("https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-html,
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-.subheading {
-    text-align: center;
-    font-size: 30px;
-    // font-family: 'Sora', sans-serif;
-    font-family: "PT Sans Narrow", sans-serif;
-    font-weight: 700;
-}
-
-.normal-heading {
-    font-weight: 900;
-    //   letter-spacing: 1px;
-    text-align: center;
-    font-size: 3vw;
-    // line-height: 4.5vw;
-    font-family: "PT Sans Narrow", sans-serif;
-    // font-family: "Raleway", sans-serif;
-    color: #242c42;
-    margin-bottom: 4vw;
-    padding-top: 4vw;
-}
-
-@media only screen and (max-width: 900px) {
-    .normal-heading {
-        font-size: 4vw;
-        margin-bottom: 4.5vw;
-        padding-top: 4.5vw;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .normal-heading {
-        font-size: 6.2vw;
-        margin-bottom: 8vw;
-        padding-top: 8vw;
-    }
-}
-
 // //*********************************************
 // .navbar_container {
 //     background-color: #fff;

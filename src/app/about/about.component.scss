@@ -3,13 +3,15 @@
     font-size: 19px;
     margin: 0px 15% 25px 15%;
     color: #212121;
-    // font-family: "Noto Sans JP", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .subheading {
     font-size: 30px;
     color: #1756BD;
-    font-family: "PT Sans Narrow", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
+    text-align: center;
+    font-weight: 700;
 }
 
 .about-container {
@@ -49,6 +51,7 @@
 
 .text {
     font-size: 15px;
+    line-height: 24px;
 }
 
 #about-section {
