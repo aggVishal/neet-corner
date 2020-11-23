@@ -7,11 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 // import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-// import { NgxPageScrollModule } from 'ngx-page-scroll'
+import { NgxPageScrollModule } from 'ngx-page-scroll'
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -54,11 +57,13 @@ import { AboutComponent } from './about/about.component';
     MatButtonModule,
     MatIconModule,
     FlexLayoutModule,
-    // NgxPageScrollModule,
+    NgxPageScrollModule,
     MatTabsModule,
     ReactiveFormsModule,
     FormsModule,
     MatCardModule,
+    MatSidenavModule,
+    MatListModule,
     FontAwesomeModule
   ],
   providers: [],

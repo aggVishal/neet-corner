@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
+
 
 
 @Component({
@@ -9,6 +10,9 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  @ViewChild('sidenav') sidenav;
+
+
   faFacebook = faFacebook;
   faInstagram = faInstagram;
   faWhatsapp = faWhatsapp;

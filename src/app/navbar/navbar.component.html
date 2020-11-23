@@ -1,18 +1,37 @@
 <mat-toolbar class="navbar_container">
     <mat-toolbar-row class="toolbar">
         <div class="toolbar-contents">
+            <button mat-icon-button (click)="sidenav.toggle()" class="menu" fxShow="true" fxHide.gt-xs><mat-icon>menu</mat-icon></button>
             <a [routerLink]="['/']" mat-icon-button class="pelto_logo">
                 <img class="logo-img" alt="Pelto" src="assets/images/logo2.jpeg" />
             </a>
-            <!-- <span class="menu-spacer"></span> -->
             <div class="toolbar-buttons">
-                <a class="navbar_button" mat-button>About Us</a>
+                <a pageScroll [pageScrollDuration]="200" [routerLink]="['/']" fragment="about-section" class="navbar_button" mat-button>About Us</a>
                 <a class="navbar_button" [routerLink]="['/test-series']" mat-button>Test Series</a>
                 <a class="navbar_button" href="https://m.youtube.com/channel/UCVgfyO6RnwjGvJ-xPVd2Thw" target="_blank" mat-button>Youtube</a>
-                <a class="navbar_button" mat-button>Contact Us</a>
+                <a pageScroll [pageScrollDuration]="200" [routerLink]="['/']" fragment="footer-section" class="navbar_button" pageScroll [pageScrollDuration]="400" href="#footer" class="navbar_button" mat-button>Contact Us</a>
             </div>
         </div>
 
     </mat-toolbar-row>
 </mat-toolbar>
-<router-outlet></router-outlet>
+
+<mat-sidenav-container color="primary">
+    <mat-sidenav #sidenav>
+        <mat-nav-list class="sidenav-content">
+            <a (click)="sidenav.toggle()" pageScroll [pageScrollDuration]="200" [routerLink]="['/']" fragment="about-section" class="navbar_button" mat-button>About Us</a>
+            <a (click)="sidenav.toggle()" [routerLink]="['/test-series']" class="navbar_button" mat-button>Test Series</a>
+            <a (click)="sidenav.toggle()" href="https://m.youtube.com/channel/UCVgfyO6RnwjGvJ-xPVd2Thw" target="_blank" class="navbar_button" mat-button>Youtube</a>
+            <a (click)="sidenav.toggle()" pageScroll [pageScrollDuration]="200" [routerLink]="['/']" fragment="footer-section" class="navbar_button" pageScroll [pageScrollDuration]="400" href="#footer" class="navbar_button" mat-button>Contact Us</a>
+            <a (click)="sidenav.toggle()" mat-button><span class="material-icons">menu_open</span></a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <!-- <app-alert></app-alert> -->
+        <router-outlet></router-outlet>
+        <!-- <app-footer></app-footer> -->
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<!-- <router-outlet></router-outlet> -->
