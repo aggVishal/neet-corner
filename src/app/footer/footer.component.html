@@ -1,7 +1,7 @@
 <footer id="footer" class="footer-section">
     <section class="ft-main">
         <div class="ft-main-item">
-            <a [routerLink]="['/']" mat-icon-button class="brand-image">
+            <a pageScroll [pageScrollDuration]="0" fragment="navbar-section" [routerLink]="['/']" mat-icon-button class="brand-image">
                 <img width="80px" alt="Neet korner" src="assets/images/logo2.jpeg">
             </a>
             <div class="icons">
@@ -29,7 +29,7 @@
                     <a pageScroll [pageScrollDuration]="200" [routerLink]="['/']" fragment="about-section">About us</a>
                 </li>
                 <li>
-                    <a pageScroll [pageScrollDuration]="200" [routerLink]="['/test-series']" fragment="test-section">Test Series</a>
+                    <a pageScroll [pageScrollDuration]="200" [routerLink]="['/test-series']" fragment="navbar-section">Test Series</a>
                 </li>
                 <li>
                     <a pageScroll [pageScrollDuration]="200" [routerLink]="['/']" fragment="community-section">Our Community</a>
