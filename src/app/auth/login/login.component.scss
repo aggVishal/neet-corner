@@ -34,3 +34,9 @@
     width: 100%;
     // color: rgb(0, 20, 87);
 }
+
+@media only screen and (max-width: 450px) {
+    .example-card {
+        width: 80%;
+    }
+}
