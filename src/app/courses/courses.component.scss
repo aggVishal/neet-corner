@@ -1,0 +1,30 @@
+.courses-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: cyan;
+}
+
+.title {
+    // border: 1px solid black;
+    text-align: center;
+}
+
+.all-courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.single-course {
+    margin: 0px 10px 15px 10px;
+    width: 274px;
+}
+
+.card-container {}
+
+// .show-more {
+//     text-align: right;
+// }

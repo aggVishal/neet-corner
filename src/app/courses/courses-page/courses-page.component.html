@@ -1,0 +1,68 @@
+<div class="ws-section">
+    <div class="login-wrapper" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-around">
+        <div class="left-part" fxFlex="67" fxLayout="column" fxLayoutAlign="start start">
+            <div class="img_box">
+                <img src="assets/images/random/img2.jpg" class="workshop-image">
+            </div>
+            <div class="left-content">
+                <div fxLayoutAlign="start" class="normal-heading">Dance From Home with GANG13</div>
+
+                <div class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa assumenda voluptatum suscipit blanditiis quae, alias repellat cum? A quidem dolore ad qui dolorum tempora distinctio dicta ea labore, assumenda numquam incidunt nulla aspernatur
+                    enim laboriosam consequatur sapiente hic nobis perspiciatis fuga voluptates nam expedita cupiditate. Ex eius culpa quas iste. <br><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quos facere maxime iure praesentium
+                    et assumenda est sed natus voluptatibus ex, veritatis libero dolore quae illum tempora impedit consequatur enim corrupti delectus veniam. Velit quo temporibus quam possimus consequatur nihil, ea culpa, explicabo totam blanditiis repellat
+                    esse aspernatur distinctio. Deleniti libero est quod, corrupti perspiciatis debitis a reiciendis aut odit? </div>
+            </div>
+        </div>
+
+
+        <div class="right-part" fxFlex="27">
+            <div class="benefit-box">
+                <div class="right-title" fxLayoutAlign="center start">Benefits</div>
+                <div>
+                    <ul>
+                        <li>Enhance learning ability</li>
+                        <li>Encourage your passion towards dancing</li>
+                        <li>Boost your confidence on a platform</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slot-booking">
+                <div class="right-title" fxLayoutAlign="center start">Select Slot</div>
+                <div *ngFor="let slot of slotObject;">
+                    <a href="slot.link">
+                        <mat-card class="small-box">
+                            <mat-card-content>
+                                <div fxLayout="row" fxLayoutAlign="space-between center">
+                                    <div class="date">{{slot.date}}</div>
+                                    <div class="cost">&#x20B9; {{slot.cost}}/-</div>
+                                </div>
+
+                                <div class="time">{{slot.startTime}}-{{slot.endTime}}</div>
+                            </mat-card-content>
+                        </mat-card>
+                    </a>
+                </div>
+                <a href="" mat-button class="proceed-to-pay" fxLayoutAlign="center">Proceed to Pay</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mentor-container">
+        <div class="mentor-inside">
+            <div class="mentor-title">Workshop Mentor</div>
+            <div class="mentor-box" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="start start">
+                <div class="mentor-image" fxFlex="45">
+                    <img class="mentor-pic" src="assets/images/mentors_images/harshwardhan.png" alt="mentor image">
+                </div>
+                <div class="mentor-content" fxFlex="55">
+                    <div class="mentor-name">Harshwardhan, GANG13</div>
+                    <div class="mentor-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quo dolore odit quam voluptatem nemo delectus eos ullam vero iste magni ipsa harum, reiciendis impedit quidem cum maiores sit suscipit dignissimos culpa numquam?
+                        Maiores corrupti natus excepturi dolorum quasi beatae minima sunt deserunt ducimus fugit? Sint porro perferendis exercitationem rerum! <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit maiores, repellendus asperiores
+                        quis corrupti magnam! Facilis magnam sapiente et reiciendis enim accusamus, harum totam quidem repellat cum in tempore aspernatur optio dolorem unde perferendis itaque reprehenderit! Nostrum, quo qui iure architecto pariatur distinctio
+                        error impedit vel beatae, neque quos laborum dignissimos harum soluta omnis alias fugit dicta sit incidunt ipsa maxime, explicabo dolorum aperiam labore. Quibusdam fuga perferendis fugiat exercitationem. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</div>

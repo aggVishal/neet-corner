@@ -31,6 +31,8 @@ import { AuthComponent } from './auth/auth.component';
 import { LoginComponent } from './auth/login/login.component';
 import { CommunityComponent } from './community/community.component';
 import { AboutComponent } from './about/about.component';
+import { CoursesComponent } from './courses/courses.component';
+import { CoursesPageComponent } from './courses/courses-page/courses-page.component';
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import { AboutComponent } from './about/about.component';
     AuthComponent,
     LoginComponent,
     CommunityComponent,
-    AboutComponent
+    AboutComponent,
+    CoursesComponent,
+    CoursesPageComponent
   ],
   imports: [
     BrowserModule,
