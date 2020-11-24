@@ -3,12 +3,16 @@
     padding-right: 5%;
     padding-top: 30px;
     padding-bottom: 10px;
-    background-color: cyan;
+    background-color: #f5f5f5;
 }
 
 .title {
     // border: 1px solid black;
     text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1756bd;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .all-courses {
@@ -21,10 +25,53 @@
 .single-course {
     margin: 0px 10px 15px 10px;
     width: 274px;
+    transition-duration: .1s;
+    a {
+        text-decoration: none;
+    }
 }
 
-.card-container {}
+.card-img {
+    border-radius: 5px;
+    margin-bottom: -11px;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #476176;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 25px;
+}
+
+.content {
+    // margin-top: -11px;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.teacher {
+    font-size: 17px;
+    color: #8d8a8a;
+}
+
+.card-container {
+    padding-bottom: 7px;
+}
 
 // .show-more {
 //     text-align: right;
 // }
+@media only screen and (min-width: 800px) {
+    .single-course {
+        transition-duration: .1s;
+    }
+    .single-course:hover {
+        width: 295px;
+        transition-duration: .4s;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .single-course {
+        width: 362px;
+    }
+}

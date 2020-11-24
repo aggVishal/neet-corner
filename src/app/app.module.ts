@@ -33,6 +33,7 @@ import { CommunityComponent } from './community/community.component';
 import { AboutComponent } from './about/about.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CoursesPageComponent } from './courses/courses-page/courses-page.component';
+import { RefundPolicyComponent } from './policy/refund-policy/refund-policy.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { CoursesPageComponent } from './courses/courses-page/courses-page.compon
     CommunityComponent,
     AboutComponent,
     CoursesComponent,
-    CoursesPageComponent
+    CoursesPageComponent,
+    RefundPolicyComponent
   ],
   imports: [
     BrowserModule,
