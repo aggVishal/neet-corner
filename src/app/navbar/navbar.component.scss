@@ -9,6 +9,7 @@
 
 .navbar_button {
     color: #476176;
+    text-align: left;
 }
 
 .toolbar-contents {
@@ -54,6 +55,7 @@
 .sidenav-content {
     display: flex;
     flex-direction: column;
+    width: 175px;
 }
 
 @media only screen and (max-width: 601px) {
