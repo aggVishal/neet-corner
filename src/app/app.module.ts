@@ -34,6 +34,7 @@ import { AboutComponent } from './about/about.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CoursesPageComponent } from './courses/courses-page/courses-page.component';
 import { RefundPolicyComponent } from './policy/refund-policy/refund-policy.component';
+import { CoursesDataService } from './courses-data.service';
 
 
 @NgModule({
@@ -72,7 +73,7 @@ import { RefundPolicyComponent } from './policy/refund-policy/refund-policy.comp
     MatListModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [CoursesDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

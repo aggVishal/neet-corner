@@ -1,67 +1,28 @@
-<div class="courses-section">
+<div class="courses-section" id="courses-section">
     <div class="courses-container">
         <h1 class="title">NEET COURSES</h1>
         <div class="all-courses">
-            <div class="single-course">
-                <a href="">
+            <div class="single-course" *ngFor="let course of courses; let i = index">
+                <!-- <a [routerLink]="['courses-page',courses?.id]"> -->
+                <a (click)="onSelect(course)">
                     <mat-card class="card-container">
                         <div class="card-img">
-                            <img mat-card-image src="assets/images/courses/droppers.jpeg" alt="">
+                            <img mat-card-image src="{{course.img}}" alt="{{course.title}} picture">
                         </div>
 
-                        <mat-card-title class="card-title"> Chemistry Course for Neet Droppers</mat-card-title>
+                        <mat-card-title class="card-title">{{course.title}}</mat-card-title>
 
                         <mat-card-content class="content">
-                            <div class="teacher">Dr. Slok Sir</div>
+                            <div class="teacher">{{course.teacher}}</div>
                         </mat-card-content>
+                        <div class="ws-fees">
+                            <div id="fees1">PRICE</div>
+                            <div><a id="fees2">Rs. {{course.price}} &nbsp;</a><s id="fees3">Rs. {{course.cutPrice}}</s></div>
+                        </div>
                     </mat-card>
                 </a>
             </div>
-            <div class="single-course">
-                <a href="">
-                    <mat-card class="card-container">
-                        <div class="card-img">
-                            <img mat-card-image src="assets/images/courses/droppers.jpeg" alt="">
-                        </div>
 
-                        <mat-card-title class="card-title"> Chemistry Course for Neet Droppers</mat-card-title>
-
-                        <mat-card-content class="content">
-                            <div class="teacher">Dr. Slok Sir</div>
-                        </mat-card-content>
-                    </mat-card>
-                </a>
-            </div>
-            <div class="single-course">
-                <a href="">
-                    <mat-card class="card-container">
-                        <div class="card-img">
-                            <img mat-card-image src="assets/images/courses/droppers.jpeg" alt="">
-                        </div>
-
-                        <mat-card-title class="card-title"> Chemistry Course for Neet Droppers</mat-card-title>
-
-                        <mat-card-content class="content">
-                            <div class="teacher">Dr. Slok Sir</div>
-                        </mat-card-content>
-                    </mat-card>
-                </a>
-            </div>
-            <div class="single-course">
-                <a href="">
-                    <mat-card class="card-container">
-                        <div class="card-img">
-                            <img mat-card-image src="assets/images/courses/droppers.jpeg" alt="">
-                        </div>
-
-                        <mat-card-title class="card-title"> Chemistry Course for Neet Droppers</mat-card-title>
-
-                        <mat-card-content class="content">
-                            <div class="teacher">Dr. Slok Sir</div>
-                        </mat-card-content>
-                    </mat-card>
-                </a>
-            </div>
 
 
         </div>

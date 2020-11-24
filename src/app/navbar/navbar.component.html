@@ -7,6 +7,7 @@
             </a>
             <div class="toolbar-buttons">
                 <a pageScroll [pageScrollDuration]="200" [routerLink]="['/']" fragment="about-section" class="navbar_button" mat-button>About Us</a>
+                <a pageScroll [pageScrollDuration]="200" [routerLink]="['/']" fragment="courses-section" class="navbar_button" mat-button>Courses</a>
                 <a class="navbar_button" [routerLink]="['/test-series']" mat-button>Online Test</a>
                 <a class="navbar_button" href="https://m.youtube.com/channel/UCVgfyO6RnwjGvJ-xPVd2Thw" target="_blank" mat-button>Youtube</a>
                 <a pageScroll [pageScrollDuration]="200" [routerLink]="['/']" fragment="footer-section" class="navbar_button" pageScroll [pageScrollDuration]="400" href="#contact-section" class="navbar_button" mat-button>Contact Us</a>
@@ -20,6 +21,7 @@
     <mat-sidenav #sidenav>
         <mat-nav-list class="sidenav-content">
             <a (click)="sidenav.toggle()" pageScroll [pageScrollDuration]="200" [routerLink]="['/']" fragment="about-section" class="navbar_button" mat-button>About Us</a>
+            <a (click)="sidenav.toggle()" pageScroll [pageScrollDuration]="200" [routerLink]="['/']" fragment="courses-section" class="navbar_button" mat-button>Courses</a>
             <a (click)="sidenav.toggle()" [routerLink]="['/test-series']" class="navbar_button" mat-button>Online Test</a>
             <a (click)="sidenav.toggle()" href="https://m.youtube.com/channel/UCVgfyO6RnwjGvJ-xPVd2Thw" target="_blank" class="navbar_button" mat-button>Youtube</a>
             <a (click)="sidenav.toggle()" pageScroll [pageScrollDuration]="200" [routerLink]="['/']" fragment="footer-section" class="navbar_button" pageScroll [pageScrollDuration]="400" href="#contact-section" class="navbar_button" mat-button>Contact Us</a>
