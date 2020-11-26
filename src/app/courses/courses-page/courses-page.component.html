@@ -1,53 +1,129 @@
-<!-- <div class="ws-section">
+<div class="ws-section">
     <div class="login-wrapper" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-around">
-        <div class="left-part" fxFlex="67" fxLayout="column" fxLayoutAlign="start start">
+        <div class="left-part" fxFlex="40" fxLayout="column" fxLayoutAlign="start start">
             <div class="img_box">
-                <img src="assets/images/random/img2.jpg" class="workshop-image">
-            </div>
-            <div class="left-content">
-                <div fxLayoutAlign="start" class="normal-heading">Dance From Home with GANG13</div>
-
-                <div class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa assumenda voluptatum suscipit blanditiis quae, alias repellat cum? A quidem dolore ad qui dolorum tempora distinctio dicta ea labore, assumenda numquam incidunt nulla aspernatur
-                    enim laboriosam consequatur sapiente hic nobis perspiciatis fuga voluptates nam expedita cupiditate. Ex eius culpa quas iste. <br><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quos facere maxime iure praesentium
-                    et assumenda est sed natus voluptatibus ex, veritatis libero dolore quae illum tempora impedit consequatur enim corrupti delectus veniam. Velit quo temporibus quam possimus consequatur nihil, ea culpa, explicabo totam blanditiis repellat
-                    esse aspernatur distinctio. Deleniti libero est quod, corrupti perspiciatis debitis a reiciendis aut odit? </div>
+                <img src={{courseDetails.img}} class="workshop-image">
             </div>
         </div>
 
+        <div class="right-part" fxFlex="50">
+            <div class="normal-heading">{{courseDetails.title}}</div>
+            <div class="desc">This course is for those students who want to score 175+ in their NEET 2021 exam.</div>
 
-        <div class="right-part" fxFlex="27">
-            <div class="benefit-box">
-                <div class="right-title" fxLayoutAlign="center start">Benefits</div>
-                <div>
-                    <ul>
-                        <li>Enhance learning ability</li>
-                        <li>Encourage your passion towards dancing</li>
-                        <li>Boost your confidence on a platform</li>
-                    </ul>
+            <div class="details-container">
+                <div class="details-columns">
+                    <div class="column1">
+                        <div class="ws-style">
+                            <div id="head">Subject</div>
+                            <div id="desc">Chemistry</div>
+                        </div>
+                        <!-- <div class="ws-ageGroup">
+                            <div id="head">Eligibility</div>
+                            <div id="desc">For Neet Droppers</div>
+                        </div> -->
+                    </div>
+                    <div class="column2">
+                        <div class="ws-style">
+                            <div class="status">Status : Last Date to apply is 1st December, 2020</div>
+                        </div>
+                    </div>
+                    <div class="ws-fees">
+                        <div id="fees1">Price</div>
+                        <div><a id="fees2">Rs. {{courseDetails.price}} &nbsp;</a><s id="fees3">Rs. {{courseDetails.cutPrice}}</s></div>
+                    </div>
                 </div>
             </div>
-            <div class="slot-booking">
-                <div class="right-title" fxLayoutAlign="center start">Select Slot</div>
-                <div *ngFor="let slot of slotObject;">
-                    <a href="slot.link">
-                        <mat-card class="small-box">
-                            <mat-card-content>
-                                <div fxLayout="row" fxLayoutAlign="space-between center">
-                                    <div class="date">{{slot.date}}</div>
-                                    <div class="cost">&#x20B9; {{slot.cost}}/-</div>
-                                </div>
-
-                                <div class="time">{{slot.startTime}}-{{slot.endTime}}</div>
-                            </mat-card-content>
-                        </mat-card>
-                    </a>
-                </div>
-                <a href="" mat-button class="proceed-to-pay" fxLayoutAlign="center">Proceed to Pay</a>
+            <div class="join-now-btn">
+                <a style="text-decoration: none;" target="_blank" href="https://play.google.com/store/apps/details?id=co.lynde.soyyi">
+                    <button style="background-color: #1756bd; color: white; font-family: 'Noto Sans JP', sans-serif;" mat-flat-button>Open in App</button>
+                </a>
             </div>
         </div>
     </div>
 
-    <div class="mentor-container">
+
+    <div class="bottom-container">
+        <mat-tab-group class="tab-container" style="font-family: 'Noto Sans JP', sans-serif;">
+            <mat-tab label="Description">
+                <div class="desc">This course is for those Students who want to score 175+ easily in their NEET 2021 exam.</div>
+                <div class="highlights">
+                    <ul>Course Highlights
+                        <li>Complete {{courseDetails.class}} Chemistry through Live Classes.</li>
+                        <li>Recorded lecture available After live Classes</li>
+                        <li>Complete Chemistry Notes (Hindi + English)</li>
+                        <li>Regular One Doubt Clearing Session after 3 Class</li>
+                        <li>Daily Morning Booster</li>
+                        <li>Question Practice sheet of each topic having 300+ question</li>
+                        <li>24*7 Doubt clearance Support</li>
+                        <li>Tricks & Short Cut Methods</li>
+                        <li>Complete Chemistry Revision after Complete Syllabus</li>
+                        <li>200+ Test (Topic wise + Complete mock test)</li>
+                    </ul>
+                </div>
+            </mat-tab>
+            <mat-tab label="Syllabus">
+                <div class="desc">Complete NEET Chemistry Syllabus Based on NCERT</div>
+
+                <ul>Inorganic Chemistry for {{courseDetails.class}}
+                    <div *ngFor="let s of inorganic;">
+                        <li>{{s}}</li>
+                    </div>
+                    <!-- <li>Periodicity and Classification of Elements</li>
+                    <li>Chemical Bonding and its Molecular Structure</li>
+                    <li>Hydrogen</li>
+                    <li>The s-Block Elements</li>
+                    <li>The p-Block Elements - Boron & Carbon Family</li>
+                    <li>The p-Block Elements</li>
+                    <li>The d-and f-block Elements</li>
+                    <li>Coordination Compounds</li>
+                    <li>General Principles and Processes of Isolation of Elements</li> -->
+                </ul>
+
+                <ul>Organic Chemistry For {{courseDetails.class}}
+                    <div *ngFor="let s of organic;">
+                        <li>{{s}}</li>
+                    </div>
+                </ul>
+
+                <ul>Physical Chemistry for {{courseDetails.class}}
+                    <div *ngFor="let s of physical;">
+                        <li>{{s}}</li>
+                    </div>
+                </ul>
+
+            </mat-tab>
+            <mat-tab label="FAQ">
+                <ul> Why Dr. Vishesh Parashri (Dr. Slok Sir)?
+
+                    <li>150,000+ happy Students, 1000+ selected students across the India.</li>
+                    <li>One of the Best Chemistry Teachers in India.</li>
+                    <li>Reads & Researches a lot before Making Any Suggestions.</li>
+                    <li>Fresher students like his teaching style as he focuses on basics and starts from ZERO to Perfection.</li>
+                    <li>Dropper Students Found his Teaching Style Awesome as he focuses on eradicating mistakes of their past and honestly guiding them to improve their marks.</li>
+                    <li>Countless Positive Reviews & Comments on Google Play Store(NEET KORNER APP), Website(neetkorner.com), YouTube(The Slok Chemistry)</li>
+                    <li>He is famous among students for his teaching style and Awesome tricks.</li>
+                </ul>
+                <ul>Why NEET KORNER Classes?
+
+                    <li>NEET KORNER Team is honestly working to provide the best platform to future doctors.</li>
+                    <li>NEET KORNER Team is always dedicated to helping needy students.</li>
+                    <li>Counselling Calls on a regular interval.</li>
+                    <li>Regular Motivational session by Dr Vishesh parashri ( slok Sir).</li>
+                    <li>Special Mentor Slok sir for each & every student.</li>
+                    <li>1,50,000+ Subscribers on YouTube Channel and still counting.</li>
+                    <li>2,000+ NEETKORNER app download.</li>
+                </ul>
+            </mat-tab>
+        </mat-tab-group>
+
+        <div class="last-lines">You can access live lectures and recorded videos any time, any where, any device - Mobile(iPhone or android) <br> This course is based on the AUTHENTIC method to master Chemistry for NEET. <br> Dr. Vishesh Parashri (Dr. Slok Sir) explains Chemistry
+            in the EASIEST way to help students GRASP concepts, memorize essential details Complete NCERT Based Syllabus Covering {{courseDetails.class}} Learn at your own time, revise as many time as you need. <br><br> All The Best <br> Let's Score 175+
+            in NEET Chemistry with Dr Vishesh Parashri </div>
+
+    </div>
+
+
+    <!-- <div class="mentor-container">
         <div class="mentor-inside">
             <div class="mentor-title">Workshop Mentor</div>
             <div class="mentor-box" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="start start">
@@ -63,9 +139,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <br><br>
-</div> -->
-
-<div>it works id={{courseDetails.title}}</div>
-<div>hello</div>
+</div>

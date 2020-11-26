@@ -13,6 +13,10 @@ export class CoursesPageComponent implements OnInit {
   public courses = [];
   public courseID;
 
+  public inorganic = [];
+  public physical = [];
+  public organic = [];
+
   constructor(private course: CoursesDataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -20,5 +24,8 @@ export class CoursesPageComponent implements OnInit {
     let id = parseInt(this.route.snapshot.paramMap.get('id'));
     this.courseID = id;
     this.courseDetails = this.courses[id - 1];
+    this.inorganic = this.courseDetails.inorganicSyllabus;
+    this.organic = this.courseDetails.organicSyllabus;
+    this.physical = this.courseDetails.physicalSyllabus;
   }
 }
