@@ -2,11 +2,21 @@
     display: block;
     margin-left: 5%;
     margin-right: 5%;
+    padding-top: 20px;
 }
 
 .stats-contents {
     display: flex;
     flex-direction: row;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1756bd;
+    font-family: "Noto Sans JP", sans-serif;
+    margin-bottom: 30px;
 }
 
 // .stats-contents :hover {
