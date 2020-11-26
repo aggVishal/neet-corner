@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CoursesDataService } from '../courses-data.service';
 import { Router } from '@angular/router'
-// import {} from './courses-data'
 
 @Component({
   selector: 'app-courses',
@@ -18,8 +17,8 @@ export class CoursesComponent implements OnInit {
     this.courses = this.course.getCourses();
   }
 
-  onSelect(course) {
-    this.router.navigate(['/courses-page', course.id]);
-  }
+  // onSelect(course) {
+  //   this.router.navigate(['/courses-page', course.id]);
+  // }
 
 }

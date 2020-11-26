@@ -13,10 +13,6 @@
     background-color: #fafafa;
 }
 
-.right-image {
-    // position: fixed;
-}
-
 .workshop-image {
     width: 100%;
     border-radius: 6px;
@@ -24,11 +20,9 @@
 }
 
 .normal-heading {
-    // margin-top: -52px;
     padding-top: 0px;
     text-align: left;
     margin-bottom: 0px;
-    // border: 1px solid black;
     font-size: 30px;
     line-height: 35px;
     font-family: "Noto Sans JP", sans-serif;
@@ -41,31 +35,9 @@
     line-height: 26px;
 }
 
-.content-text {
-    margin-top: 30px;
-    font-size: 16px;
-    line-height: 20px;
-    color: #242c42;
-    font-family: "Noto Sans JP", sans-serif;
-}
-
 .right-part {
     border-radius: 10px;
     text-align: left;
-}
-
-.benefit-box {
-    background-color: #2597d5;
-    color: #fcf6f5ff;
-    margin-bottom: 10px;
-    padding: 20px 16px 10px 0px;
-    border-radius: 6px;
-    a {
-        text-decoration: none;
-    }
-    .right-title {
-        color: #fcf6f5ff;
-    }
 }
 
 .right-title {
@@ -73,30 +45,6 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-}
-
-.slot-booking {
-    margin-bottom: 10px;
-    padding: 20px 0px 10px 0px;
-    border-radius: 6px;
-    a {
-        text-decoration: none;
-    }
-}
-
-.small-box {
-    margin: 15px 10px 10px 10px;
-    background-color: white;
-    font-family: "Noto Sans JP", sans-serif;
-    .date {
-        color: #212121;
-    }
-    .time {
-        color: #7a7a7a;
-    }
-    .cost {
-        color: #2597d5;
-    }
 }
 
 .proceed-to-pay {
@@ -108,55 +56,15 @@
     font-size: 16px;
 }
 
-.mentor-container {
-    margin-top: 40px;
-    background-color: #f2f2f2;
-}
-
-.mentor-inside {
-    margin: auto;
-    width: 77%;
-    padding: 10px 0px 20px 0px;
-}
-
-.mentor-title {
-    margin: 20px 0px 20px 0px;
-    font-size: 25px;
-    font-weight: 700;
-}
-
-.mentor-pic {
-    width: 90%;
-    height: 100%;
-    border-radius: 8px;
-}
-
-.mentor-name {
-    margin: 0px 0px 10px 0px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.mentor-text {
-    font-size: 16px;
-    line-height: 20px;
-    color: #242c42;
-}
-
 //***************************************
 .details-columns {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    // height: 100%;
-    // border: 1px solid black;
 }
 
 .details-container {
     margin-top: 20px;
-    // height: 100%;
-    // display: flex;
-    // flex-direction: column;
 }
 
 .column1 {
@@ -170,18 +78,6 @@
     margin-top: 25px;
 }
 
-.ws-style {
-    // float: left;
-    // width: 40%;
-    // border-right: 1px solid grey;
-}
-
-.ws-ageGroup {
-    // float: left;
-    // width: 40%;
-    // margin-left: 3%;
-}
-
 #head {
     font-size: 16px;
     color: #7a7a7a;
@@ -191,7 +87,6 @@
 #desc {
     font-size: 17px;
     line-height: 25px;
-    // font-weight: 500;
     color: #476176;
 }
 
@@ -201,8 +96,6 @@
 }
 
 .ws-fees {
-    // font-size: 18px;
-    // line-height: 2.3vw;
     margin-top: 20px;
 }
 
@@ -214,13 +107,11 @@
 }
 
 #fees2 {
-    // font-weight: 500;
     font-size: 19px;
     color: green;
 }
 
 #fees3 {
-    // font-weight: 400;
     font-size: 20px;
     color: grey;
 }
@@ -258,41 +149,17 @@ ul {
     .login-wrapper {
         width: 85%;
     }
-    .mentor-inside {
-        width: 83%;
-    }
 }
 
 @media only screen and (max-width: 870px) {
     .login-wrapper {
         width: 90%;
     }
-    .mentor-inside {
-        width: 88%;
-    }
 }
 
 @media only screen and (max-width: 750px) {
     .login-wrapper {
         width: 95%;
-    }
-    .mentor-inside {
-        width: 93%;
-    }
-    .content-text {
-        margin-top: 20px;
-    }
-}
-
-@media only screen and (max-width: 599px) {
-    .mentor-name {
-        margin-top: 20px;
-    }
-    .mentor-pic {
-        width: 100%;
-    }
-    .left-content {
-        padding-bottom: 20px;
     }
 }
 
@@ -301,31 +168,18 @@ ul {
         width: 100%;
         margin-top: 0px;
     }
-    .mentor-inside {
-        width: 100%;
-    }
-    .mentor-pic {
-        border-radius: 0px;
-    }
-    .mentor-title {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .mentor-content {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .left-content {
-        padding: 10px 15px 20px 15px;
+    .right-part {
+        margin-top: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .workshop-image {
         border-radius: 0px;
     }
-    .benefit-box {
-        border-radius: 0px;
+    .bottom-container {
+        width: 90%;
     }
-    .slot-booking {
-        margin-left: 15px;
-        margin-right: 15px;
+    .column1 {
+        padding-right: 0px;
     }
 }
