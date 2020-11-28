@@ -35,6 +35,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { CoursesPageComponent } from './courses/courses-page/courses-page.component';
 import { RefundPolicyComponent } from './policy/refund-policy/refund-policy.component';
 import { CoursesDataService } from './courses-data.service';
+import { MainHomeComponent } from './main-home/main-home.component';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { CoursesDataService } from './courses-data.service';
     AboutComponent,
     CoursesComponent,
     CoursesPageComponent,
-    RefundPolicyComponent
+    RefundPolicyComponent,
+    MainHomeComponent
   ],
   imports: [
     BrowserModule,

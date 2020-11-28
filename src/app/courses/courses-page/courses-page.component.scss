@@ -1,12 +1,12 @@
 .ws-section {
     font-family: "Noto Sans JP", sans-serif;
     background-color: #fafafa;
+    padding-top: 35px;
 }
 
 .login-wrapper {
     width: 90%;
     margin: auto;
-    margin-top: 35px;
 }
 
 .left-part {
@@ -164,6 +164,9 @@ ul {
 }
 
 @media only screen and (max-width: 450px) {
+    .ws-section {
+        padding-top: 0px;
+    }
     .login-wrapper {
         width: 100%;
         margin-top: 0px;

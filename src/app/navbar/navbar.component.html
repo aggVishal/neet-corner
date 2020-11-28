@@ -24,10 +24,10 @@
             <a (click)="sidenav.toggle()" pageScroll [pageScrollDuration]="200" [routerLink]="['/']" fragment="courses-section" class="navbar_button" mat-button>Courses</a>
             <a (click)="sidenav.toggle()" [routerLink]="['/test-series']" class="navbar_button" mat-button>Online Test</a>
             <a (click)="sidenav.toggle()" href="https://m.youtube.com/channel/UCVgfyO6RnwjGvJ-xPVd2Thw" target="_blank" class="navbar_button" mat-button>Youtube</a>
-            <a (click)="sidenav.toggle()" pageScroll [pageScrollDuration]="200" [routerLink]="['/']" fragment="footer-section" class="navbar_button" pageScroll [pageScrollDuration]="400" href="#contact-section" class="navbar_button" mat-button>Contact Us</a>
+            <a (click)="sidenav.toggle()" class="navbar_button" pageScroll [pageScrollDuration]="400" href="#contact-section" class="navbar_button" mat-button>Contact Us</a>
         </mat-nav-list>
     </mat-sidenav>
-    <!-- <mat-sidenav-content>
-        <router-outlet></router-outlet>
-    </mat-sidenav-content> -->
+    <mat-sidenav-content>
+        <app-home></app-home>
+    </mat-sidenav-content>
 </mat-sidenav-container>
