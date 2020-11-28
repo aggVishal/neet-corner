@@ -19,11 +19,6 @@
     flex-direction: row;
 }
 
-.name {
-    margin: auto;
-    margin-top: 10px;
-}
-
 .left {
     width: 60%;
     margin-right: 10%;
@@ -44,6 +39,11 @@
     display: flex;
 }
 
+.name {
+    margin: auto;
+    margin-top: 10px;
+}
+
 .img {
     width: 100%;
     margin-top: -45px;
@@ -58,7 +58,6 @@
     background-color: #f7f7f7;
     padding-top: 30px;
     padding-bottom: 20px;
-    // color: white;
 }
 
 @media only screen and (max-width: 800px) {
