@@ -1,1 +1,163 @@
-<app-login></app-login>
+<!-- Start login bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="https://neetkorner.com/" class="navbar-brand">
+                <img src="https://www.mylearninggraph.com/assets/instituteimages/logo/logo_1606214815_logo2.jpeg" class="logo" alt="" title="Your Logo">
+            </a>
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" area_expanded="false" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse pull-right" id="navbar-main">
+            <form method="post" action="https://www.mylearninggraph.com/vendor/b2b-login.php" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <input type="hidden" name="action" id="action" value="login">
+                    <input type="hidden" name="referrer" id="referrer" value="login">
+                </div>
+                <ul class="nav navbar-nav mob-search-view">
+                    <li>
+                        <label>User Id</label>
+                        <input type="text" class="form-control" name="email" placeholder="Enter your user id" required>
+                    </li>
+                    <li>
+                        <label>Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="Enter Password" required>
+                    </li>
+                    <li>
+                        <button type="submit" class="btn btn-info btn-login">Login</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End login bar -->
+
+<!-- Start menu -->
+<div class="container-fluid gray-bg" style="margin-top:65px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav navber-nav">
+                    <li><a data-target="#aboutmodal" data-toggle="modal">About Us</a></li>
+                    <li><a data-target="#directormodal" data-toggle="modal">Director's Message</a></li>
+                    <li><a data-target="#coursesmodal" data-toggle="modal">Courses</a></li>
+                    <li><a data-target="#contactmodal" data-toggle="modal">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End menu -->
+
+<!-- Start Banner -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="banner">
+            <img src="https://www.mylearninggraph.com/assets/instituteimages/banners/logo_1606214825_banner-img.jpg" class="img-responsive" alt="" title="">
+            <!-- <img src="images/banner.jpg" class="img-responsive" alt="" title=""> -->
+        </div>
+    </div>
+</div>
+<!-- End Banner -->
+
+<!-- Start feature -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 features">
+            <h2>Features</h2>
+            <p>You will get complete chemistry courses for Class XI - XII(NEET/AIIMS/IIT JEE). We provide quality content in the form of live classes, offline video lectures, notes, assignments and weekly test series for complete preparation of your exam.
+            </p>
+            <!-- <p>Competitive exams are not merely a test of subject knowledge but also a test of application of knowledge in examination hall. But frequently it is seen that student spends 99% of his time in gaining subject knowledge and ignores/postpones the testing part. The result, he does not come to know his strong and weak areas until the end of preparation, which at times is too late to react. Remember, tests provide answers. They help a student by highlighting the problems and initiating the corrective measures.</p>
+            <h5>Subject</h5>
+            <ul>
+                <li>Mathematics</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+            </ul> -->
+        </div>
+    </div>
+</div>
+<!-- End feature -->
+
+
+<!-- Start Modals -->
+
+<!-- Start About Modal -->
+<div class="modal fade" id="aboutmodal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">About Us</h4>
+            </div>
+            <div class="modal-body">
+                <p>Dr. Vishesh Parashri had completed his UG degree from IMS BHU and currently working as doctor at S.S Hospital, IMS BHU. He has been teaching chemistry for XI -XII/ NEET/AIIMS/IIT JEE Examination since 2015 and is very passionate about
+                    his teaching. Vishesh sir believes that everyone has the right to educate whether he/she is from a city or from a small town. On Neet Korner app you will get complete chemistry courses for Class XI - XII(NEET/AIIMS/IIT JEE). We provide
+                    quality content in the form of live classes, offline video lectures, notes, assignments and weekly test series for complete preparation of your exam.</p>
+                <!-- <p>Competitive exams are not merely a test of subject knowledge but also a test of application of knowledge in examination hall. But frequently it is seen that student spends 99% of his time in gaining subject knowledge and ignores/postpones the testing part. The result, he does not come to know his strong and weak areas until the end of preparation, which at times is too late to react. Remember, tests provide answers. They help a student by highlighting the problems and initiating the corrective measures.</p>
+                <h5>Subject</h5>
+                <ul>
+                    <li>Mathematics</li>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About Modal -->
+<!-- Start Director's Message Modal -->
+<div class="modal fade" id="directormodal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Director's Message</h4>
+            </div>
+            <div class="modal-body">
+                <p><br></p>
+                <!-- <p>Some text in the modal.</p> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Director's Message Modal -->
+<!-- Start Courses Modal -->
+<div class="modal fade" id="coursesmodal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Courses</h4>
+            </div>
+            <div class="modal-body">
+                <p>Class XI - XII (NEET/AIIMS/IIT JEE)</p>
+                <!-- <p>Some text in the modal.</p> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Courses Modal -->
+<!-- Start Contact Us Modal -->
+<div class="modal fade" id="contactmodal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Contact Us</h4>
+            </div>
+            <div class="modal-body">
+                <p>Call:- 9519416040<br>Whatsapp:- 9140640477</p>
+                <p>Email:- <a data-cke-saved-href="mailto:neetkorner@gmail.com" href="mailto:neetkorner@gmail.com">neetkorner@gmail.com</a></p>
+                <p>SOCIAL MEDIA LINK</p>
+                <p><br>YOUTUBE:- <a data-cke-saved-href="https://m.youtube.com/channel/UCVgfyO6RnwjGvJ-xPVd2Thw" href="https://m.youtube.com/channel/UCVgfyO6RnwjGvJ-xPVd2Thw">https://m.youtube.com/channel/UCVgfyO6RnwjGvJ-xPVd2Thw</a><br>Neet KORNER APP link
+                    :- <a data-cke-saved-href="https://play.google.com/store/apps/details?id=co.lynde.soyyi" href="https://play.google.com/store/apps/details?id=co.lynde.soyyi">https://play.google.com/store/apps/details?id=co.lynde.soyyi</a></p>
+                <!-- <p>Some text in the modal.</p> -->
+            </div>
+        </div>
+    </div>
+</div>

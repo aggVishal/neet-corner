@@ -82,6 +82,17 @@ export class CoursesDataService {
     "Surface chemistry"
   ];
 
+  public courseHighlights = ["Course Highlights",
+    "30 Chapter wise Chemistry Online Tests based on Exact NEET Pattern",
+    "4 Major Tests which covered complete Chemistry Syllabus for Class 11",
+    "3500+ Chemistry Questions with detailed explanation are based on new pattern of NEET 2022.",
+    "45 Questions are included per chapter in the Chemistry Mock Test.",
+    "80% question are solely based on NCERT. Remaining 20% questions are higher level which are designed to give an edge over other students.",
+    "Comparison with topper's score and time taken by him.",
+    "Free Chemistry Notes are available with tests series.",
+    "Can give test 3 times, helpful in revision."
+  ]
+
   constructor() { }
 
   getCourses() {
@@ -98,6 +109,7 @@ export class CoursesDataService {
         "physicalSyllabus": this.physical_mix,
         "organicSyllabus": this.organic_mix,
         "inorganicSyllabus": this.inorganic_mix,
+        "isTS": false
       },
       {
         "id": "2",
@@ -111,6 +123,7 @@ export class CoursesDataService {
         "physicalSyllabus": this.physical_11,
         "organicSyllabus": this.organic_11,
         "inorganicSyllabus": this.inorganic_11,
+        "isTS": false
       },
       {
         "id": "3",
@@ -124,6 +137,7 @@ export class CoursesDataService {
         "physicalSyllabus": this.physical_12,
         "organicSyllabus": this.organic_12,
         "inorganicSyllabus": this.inorganic_12,
+        "isTS": false
       },
       {
         "id": "4",
@@ -137,6 +151,7 @@ export class CoursesDataService {
         "physicalSyllabus": this.physical_mix,
         "organicSyllabus": this.organic_mix,
         "inorganicSyllabus": this.inorganic_mix,
+        "isTS": false
       },
       {
         "id": "5",
@@ -150,6 +165,7 @@ export class CoursesDataService {
         "physicalSyllabus": this.physical_mix,
         "organicSyllabus": this.organic_mix,
         "inorganicSyllabus": this.inorganic_mix,
+        "isTS": true
       },
     ]
   }

@@ -1,0 +1,70 @@
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand .logo {
+    max-height: 50px;
+    margin: 7px 0;
+}
+
+#navbar-main .nav.navbar-nav li label {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+#navbar-main .nav.navbar-nav li {
+    margin-right: 15px;
+}
+
+#navbar-main .nav.navbar-nav {
+    margin: 2px 0px 8px;
+}
+
+.btn-login {
+    margin-top: 20px;
+}
+
+.gray-bg {
+    background-color: #333;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.gray-bg .nav.navber-nav li {
+    display: inline-block;
+}
+
+.gray-bg .nav.navber-nav li a {
+    color: #fff;
+}
+
+.gray-bg .nav.navber-nav li:hover a {
+    color: #333;
+}
+
+.features {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.features h2 {
+    color: #11A4BF;
+    border-bottom: 2px solid #11A4C3;
+}
+
+.features p {
+    text-align: justify;
+}
+
+.features h5 {
+    color: #11A4BF;
+    font-weight: 600;
+}
+
+.modal .modal-body h5 {
+    color: #333;
+    font-weight: 600;
+}

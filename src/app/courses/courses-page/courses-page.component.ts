@@ -17,6 +17,8 @@ export class CoursesPageComponent implements OnInit {
   public physical = [];
   public organic = [];
 
+  public isTS;
+
   constructor(private course: CoursesDataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -27,5 +29,7 @@ export class CoursesPageComponent implements OnInit {
     this.inorganic = this.courseDetails.inorganicSyllabus;
     this.organic = this.courseDetails.organicSyllabus;
     this.physical = this.courseDetails.physicalSyllabus;
+    this.isTS=this.courseDetails.isTS;
   }
+  
 }
