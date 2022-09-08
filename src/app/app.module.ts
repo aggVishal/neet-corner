@@ -59,7 +59,7 @@ import { MainHomeComponent } from './main-home/main-home.component';
     MainHomeComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
