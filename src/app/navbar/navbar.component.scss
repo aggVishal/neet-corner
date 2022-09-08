@@ -13,6 +13,14 @@
     text-decoration: none;
 }
 
+.login_button {
+    color: #1756bd;
+    border: 2px solid #1756bd;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
 .toolbar-contents {
     display: flex;
     width: 100%;
@@ -44,7 +52,7 @@
 }
 
 .toolbar-buttons {
-    margin-top: 2%
+    margin-top: 1.2%
 }
 
 .mat-button {
